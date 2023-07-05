@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>alley Cards</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Rezerwacja torów bowlingowych</h1>
+      <button id="reservations-button" onclick="showReservations()">Dokonaj Rezerwacji</button>
+      <button id="reservations-button" onclick="showUserReservations()">Twoje Rezerwacje</button>
+    </div>
+  </header>
+
+<div id="user-reservations-container">
+
+</div>
+  <div id="reservation-form" class="reservation-form">
+    <label>Data rezerwacji:</label>
+    <input id="startDateInput" type="date">
+    <div class="start-time-picker">
+      <label>Godzina rozpoczęcia</label>
+      <select id="start-hour-select">
+        <option value="T14:00:00.000Z">14:00</option>
+        <option value="T15:00:00.000Z">15:00</option>
+        <option value="T16:00:00.000Z">16:00</option>
+        <option value="T17:00:00.000Z">17:00</option>
+        <option value="T18:00:00.000Z">18:00</option>
+        <option value="T19:00:00.000Z">19:00</option>
+        <option value="T20:00:00.000Z">20:00</option>
+        <option value="T21:00:00.000Z">21:00</option>
+        <option value="T22:00:00.000Z">22:00</option>
+      </select>
+    </div>
+    <div class="end-time-picker">
+      <label>Godzina zakończenia</label>
+      <select id="end-hour-select">
+        <option value="T15:00:00.000Z">15:00</option>
+        <option value="T16:00:00.000Z">16:00</option>
+        <option value="T17:00:00.000Z">17:00</option>
+        <option value="T18:00:00.000Z">18:00</option>
+        <option value="T19:00:00.000Z">19:00</option>
+        <option value="T20:00:00.000Z">20:00</option>
+        <option value="T21:00:00.000Z">21:00</option>
+        <option value="T22:00:00.000Z">22:00</option>
+        <option value="T23:00:00.000Z">23:00</option>
+      </select>
+  </div>
+    <button id="reserve-button" onclick="searchByDates()">Szukaj dostępnych torów</button>
+  </div>
+  <div id="card-container">
+
+  </div>
+
+  <div id="reservation-container">
+    
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Czy chcesz dokonać rezerwacji?</h2>
+      <button id="submit-button">Zatwierdź</button>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Komunikacja Człowiek-Komputer Projekt w64238</p>
+    </div>
+  </footer>
+  
+
+  <script src="scripts.js"></script>
+</body>
+</html>
